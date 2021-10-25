@@ -1,6 +1,6 @@
 # Welcome
-*pickleDB is a lightweight and simple key-value store.* 
-**It is inspired by written in Python - [pickleDB](https://github.com/patx/pickledb).**
+**pickleDB is a lightweight and simple key-value store.** 
+It is inspired by written in Python - [pickleDB](https://github.com/patx/pickledb).
 
 ```go
 package main
