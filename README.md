@@ -13,7 +13,7 @@ func main() {
     db := cucumber.New()
     db.Load("database.jdb")
     
-    db.Set("key", "value") // true
+    db.Set("key", "value") // -> true
     db.Get("key") // -> value
     
     db.Dump()
