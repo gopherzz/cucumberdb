@@ -1,3 +1,3 @@
-module github.com/gopherzz/cucumber-db
+module github.com/gopherzz/cucumberdb
 
 go 1.17
