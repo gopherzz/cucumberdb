@@ -129,6 +129,18 @@ func (db *Db) LCreate(name string) bool {
 	return true
 }
 
+/// Return length of a list
+func (db *Db) LLen(name string) int {
+	if !db.isOpen {
+		return 0
+	}
+	switch reflect.ValueOf(db.data[name]).Kind() {
+	case reflect.Slice:
+		return len(db.data[name].([]interface{}))
+	}
+	return 0
+}
+
 /// Add a value to a list
 func (db *Db) LAdd(name string, value interface{}) bool {
 	if !db.isOpen {
